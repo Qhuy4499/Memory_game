@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.grid_panel{
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-row-gap: 10px;
+    height: 300px;
+    width: 800px;
+    padding-top: 20px;
+}
+.flip-animation{
+    position: relative;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.flip-animation:active {
+  transform: rotateY(180deg);
+}
